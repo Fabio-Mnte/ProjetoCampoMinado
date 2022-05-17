@@ -156,6 +156,7 @@ function verificarFim(){
             }
             if(testeFim == dificuldade){
                 alert("você ganhou") //ganhar()
+                location.reload()
             }
         }
     }
