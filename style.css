@@ -1,0 +1,65 @@
+#CampoMinado {
+    text-align: center;
+    width: 30%;
+    height: 70%;
+    left: 35%;
+    background-color: rgb(9, 153, 69);
+    margin: 0;
+    display: none;
+    position: absolute;
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 0;
+}
+
+.casaFacil {
+    height: 9%;
+    width: 9%;
+    transform: translateY(55%);
+    border: 1.5% solid black;
+    position: relative;
+    z-index: 1;
+    color: black;
+}
+
+.casaMedia {
+    height: 5%;
+    width: 5%;
+    transform: translateY(95%);
+    border: 1.5% solid black;
+    position: relative;
+    z-index: 1;
+}
+
+.casaDificil {
+    height: 4%;
+    width: 4%;
+    transform: translateY(50%);
+    border: 1.5% solid black;
+    position: relative;
+    z-index: 1;
+}
+
+#Menu {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(83, 209, 71)
+}
+#bombaParada{
+    height: 35%;
+    position: absolute;
+    z-index: -1;
+    top:40%;
+    left: 85%;
+}
+#bombaAndando{
+    position: absolute;
+    height: 35%;
+    top: 40%;
+    margin-left: 0;
+
+}
