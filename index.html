@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Campo minado</h1>
+    <img src="res/Bomba-andando.png" id="bombaAndando">
+    <img src="res/Bomba-parada.png" id="bombaParada">
+    <div id="Menu">
+        <h2>Escolha uma dificuldade</h2>
+        <button onclick="startup('facil')">Fácil</button>
+        <br>
+        <button onclick="startup('medio')">Médio</button>
+        <br>
+        <button onclick="startup('dificil')">Difícil</button>
+    </div> 
+    <div id="CampoMinado">
+        <div id="cronometro">
+            <span id="minuto">00</span>:
+            <span id="segundo">00</span>
+        </div>        
+    </div>
+</body>
+</html>
