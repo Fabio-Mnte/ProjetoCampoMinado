@@ -10,6 +10,7 @@
 }
 
 .casaFacil {
+    margin-top: 0;
     font-size:35px;
     cursor: pointer;
     height: 9%;
@@ -21,6 +22,7 @@
     color: rgb(211, 28, 28);
 }
 .casaMedia {
+    margin-top:0;
     cursor: pointer;
     height: 5%;
     width: 7%;
@@ -31,6 +33,7 @@
     color: rgb(255, 0, 0)
 }
 .casaDificil {
+    margin-top:0;
     cursor: pointer;
     height: 4%;
     width: 4.8%;
@@ -81,4 +84,12 @@ button{
     height:30%;
     width:30%;
     border: 1px solid black;
+}
+#cronometro{
+    top:-10%;
+    position:absolute;
+    left: 41%;
+    color:rgb(87, 0, 180);
+    font-size: 40px;
+    margin-bottom: 0px;
 }

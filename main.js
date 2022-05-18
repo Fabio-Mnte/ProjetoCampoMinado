@@ -24,6 +24,7 @@ function startup(nivel){ //define quantidade de casas e bombas
         bombas = 99
     }
     plot(nivel)
+    cronometrar()
 }
 function plot(nivel){ //cria uma matriz com todas as casas
     let sumirCena = document.getElementById("Menu")
@@ -84,7 +85,6 @@ function minas(casaX, casaY){ //gera as minas em lugares aleatórios
     }
     iniciar = false
 }
-//A partir daqui ta quebrado
 function chute(casaX,casaY){ //verifica se tem bomba em cima da casa apertada e quantas bombas tem ao redor
     let nBomba = 0
     for(l=casaX-1;l<=casaX+1;l++){
@@ -106,8 +106,9 @@ function chute(casaX,casaY){ //verifica se tem bomba em cima da casa apertada e 
                 nBomba++
             }
             if(casas[casaX][casaY]==-2){
-               terminou()
-               return
+                pause()
+                terminou()
+                return
             }
         }
     }
@@ -165,4 +166,28 @@ function verificarFim(){
 function terminou() {
     alert("Putz... Você perdeu e explodiu uma bomba")
     location.reload()   
+}
+
+var cronometro
+var minuto=0
+var segundo = 0
+
+function cronometrar() {
+    cronometro = setInterval(() => { timer(); }, 1000);
+}
+function pause(){
+    clearInterval(cronometro)
+}
+
+function timer(){
+    if((segundo+= 1) == 60){
+        segundo = 0
+        minuto++
+    }
+    document.getElementById('segundo').innerText = retornarTempo(segundo);
+    document.getElementById('minuto').innerText = retornarTempo(minuto);
+}
+
+function retornarTempo(input){
+    return input > 10 ? input : `0${input}`
 }
