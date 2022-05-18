@@ -163,6 +163,6 @@ function verificarFim(){
     }
 }
 function terminou() {
-    alert("Puts... Você perdeu e explodiu uma bomba")
+    alert("Putz... Você perdeu e explodiu uma bomba")
     location.reload()   
 }
