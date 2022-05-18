@@ -84,7 +84,6 @@ function minas(casaX, casaY){ //gera as minas em lugares aleatórios
     }
     iniciar = false
 }
-//A partir daqui ta quebrado
 function chute(casaX,casaY){ //verifica se tem bomba em cima da casa apertada e quantas bombas tem ao redor
     let nBomba = 0
     for(l=casaX-1;l<=casaX+1;l++){
@@ -162,6 +161,6 @@ function verificarFim(){
     }
 }
 function terminou() {
-    alert("Puts... Você perdeu e explodiu uma bomba")
+    alert("Putz... Você perdeu e explodiu uma bomba")
     location.reload()   
 }
