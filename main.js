@@ -84,6 +84,7 @@ function minas(casaX, casaY){ //gera as minas em lugares aleatórios
     }
     iniciar = false
 }
+//A partir daqui ta quebrado
 function chute(casaX,casaY){ //verifica se tem bomba em cima da casa apertada e quantas bombas tem ao redor
     let nBomba = 0
     for(l=casaX-1;l<=casaX+1;l++){
@@ -116,6 +117,8 @@ function chute(casaX,casaY){ //verifica se tem bomba em cima da casa apertada e 
         cor.setAttribute("style","background-color:#00FF00")
     } else{
         document.getElementById('casa'+casaX+' '+casaY).value = nBomba
+        let cor = document.getElementById('casa'+casaX+" "+casaY)
+        cor.setAttribute("style","background-color:#06c258")
     }
     casas[casaX][casaY] = 1
     verificarFim()
@@ -155,12 +158,11 @@ function verificarFim(){
             }
             if(testeFim == dificuldade){
                 alert("você ganhou") //ganhar()
-                location.reload()
             }
         }
     }
 }
 function terminou() {
-    alert("Putz... Você perdeu e explodiu uma bomba")
+    alert("Puts... Você perdeu e explodiu uma bomba")
     location.reload()   
 }
